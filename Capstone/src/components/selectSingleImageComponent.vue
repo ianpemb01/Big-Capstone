@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import axios from "axios";
 import { useRoute } from "vue-router";
+import DeleteImageComponent from "./deleteImageComponent.vue";
 
 const route = useRoute();
 const image = ref("");
@@ -21,8 +22,11 @@ try {
 
 <template>
   <div className="flex justify-center items-center py-4">
-    <div className="flex border-2 p-2 rounded-md border-[#F8E8CC] w-[700px] h-[700px]">
+    <div className="flex border-2 p-2 rounded-md w-[700px] h-[700px]">
         <img className="max-h-[700px] max-w-[700px] h-full w-full" :src="image" />
+    </div>
+    <div>
+        <DeleteImageComponent></DeleteImageComponent>
     </div>
   </div>
 </template>

@@ -8,7 +8,7 @@ const images = ref([]);
 const loading = ref(false);
 loading.value = true;
 try {
-//   loading.value = true;
+  //   loading.value = true;
   axios.get("http://localhost:3000/gallery").then((json) => {
     console.log({ taco: json.data });
     images.value = json.data;
@@ -27,7 +27,7 @@ console.log(images);
   <div className="py-2">
     <div className="flex flex-col space-y-4 justify-center items-center">
       <div v-for="(image, index) in images" :key="index">
-        <div className="border-2 p-2 rounded-md border-[#F8E8CC]">
+        <div className="border-2 p-2 rounded-md">
           <div className="w-96 h-96">
             <div v-if="loading">...Loading</div>
             <div v-if="!loading">

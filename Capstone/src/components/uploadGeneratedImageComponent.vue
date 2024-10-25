@@ -3,26 +3,22 @@ import { ref } from "vue";
 import axios from "axios";
 
 const props = defineProps(["url"]);
-
-// const res = await fetch(props.url)
-// const blob = await res.buffer('')
-
-// const prepareImage = (event) => {
-//     blob.value = event.target.files[0];
-// }
+let imageKey = ref('')
 
 const sendImage = async () => {
   let url = props.url;
   if (url) {
     const formData = new FormData();
     formData.append("image", url);
-    console.log(props.url);
+    console.log(props.url, 'burrito');
     try {
       const response = await axios.post(
         "http://localhost:3000/save-image",
-        { URL: url }
+        { URL: url,
+          Key: imageKey.value
+        }
       );
-      console.log(response.data);
+      console.log(response.data, 'taco');
     } catch (error) {
       console.error("Error uploading image: ", error);
     }
@@ -31,7 +27,10 @@ const sendImage = async () => {
 </script>
 
 <template>
-  <button @click="sendImage">Save Image</button>
+  <div className="flex flex-col space-y-4 justify-center items-center pt-4">
+    <input type="text" default="Image name"  v-model="imageKey">
+  <button className="bg-gray-200 rounded-md" @click="sendImage">Save Image</button>
+</div>
 </template>
 
 <style scoped></style>
