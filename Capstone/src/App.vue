@@ -19,7 +19,7 @@ const router = useRoute();
           className="bg-[#F3F2EE] rounded-md min-w-max text-sm py-1 px-4"
           @click="$router.push('/gallery')"
         >
-          Gallery
+          Galleries
         </button>
 
         <button
