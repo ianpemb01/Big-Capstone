@@ -9,7 +9,7 @@ const router = useRoute();
     <div className="h-full flex flex-row space-x-4 items-center px-2 justify-between">
       <div className="flex flex-row items-center">
       <button @click="$router.push('/')">
-        <img src="/Users/ipemberton/Library/CloudStorage/OneDrive-Humana/Desktop/Big-Capstone/Capstone/src/assets/Logo.png" alt="" className="h-10 px-4">
+        <img src="src/assets/Logo.png" alt="" className="h-10 px-4">
     </button>
       <h1 className="text-3xl font-extrabold text-slate-300" @click="$router.push('/')">GRID.AI</h1>
     </div>
