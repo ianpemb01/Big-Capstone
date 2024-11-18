@@ -9,7 +9,7 @@ const image = ref("");
 console.log(route.params);
 try {
   axios
-    .get(`http://https://generative-image-a-i-express-40t73jy4w.vercel.app/image/${route.params.key}`)
+    .get(`http://generative-image-a-i-express-40t73jy4w.vercel.app/image/${route.params.key}`)
     .then((json) => {
       image.value = json.data;
       console.log(json.data);
