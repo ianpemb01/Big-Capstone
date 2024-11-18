@@ -34,7 +34,7 @@ let options = {
   "Content-Type": "application/json",
     }
 }
-fetch('https://generative-image-a-i-express-15zxlmc11.vercel.app/newImage', options)
+fetch('https://generative-image-a-i-express.vercel.app/newImage', options)
 .then (response =>{
     return response.json()
 })

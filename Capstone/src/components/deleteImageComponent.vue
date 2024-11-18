@@ -7,7 +7,7 @@ const route = useRoute();
 
 const deleteImage = async (key) => {
     try{
-        const response = await axios.delete(`https://generative-image-a-i-express-15zxlmc11.vercel.app/image/delete/${route.params.key}`);
+        const response = await axios.delete(`https://generative-image-a-i-express.vercel.app/image/delete/${route.params.key}`);
         console.log('Image deleted succesfullly:', response.data);
     } catch(error) {
         console.error('Failed to delete image: ', error)
