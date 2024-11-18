@@ -9,7 +9,7 @@ const loading = ref(false);
 loading.value = true;
 try {
   //   loading.value = true;
-  axios.get("https://generative-image-a-i-express-15zxlmc11.vercel.app/gallery").then((json) => {
+  axios.get("https://generative-image-a-i-express.vercel.app/gallery").then((json) => {
     console.log({ taco: json.data });
     images.value = json.data;
   });
