@@ -7,7 +7,7 @@ const route = useRoute();
 let tempImages = reactive([])
 
 try {
-    axios.get(`http://localhost:3000/temp-urls`).then((json) => {
+    axios.get(`http://generative-image-a-i-express-40t73jy4w.vercel.app/temp-urls`).then((json) => {
       Object.assign(tempImages, [json.data])
      console.log(tempImages)
     //   console.log(json.data[0].url)
