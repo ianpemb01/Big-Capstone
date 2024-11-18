@@ -37,7 +37,7 @@ const sendImages = async () => {
     console.log(descr)
     try {
       await axios
-        .post(`http://https://generative-image-a-i-express-40t73jy4w.vercel.app/edit-openai/${descr}`, formData)
+        .post(`http://generative-image-a-i-express-40t73jy4w.vercel.app/edit-openai/${descr}`, formData)
         .then((json) => {
           image_url.value = json.data.imageUrl;
           console.log(image_url);
