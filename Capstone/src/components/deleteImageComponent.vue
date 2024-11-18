@@ -5,7 +5,7 @@ import { useRoute } from "vue-router";
 const props = defineProps(["key"]);
 const route = useRoute();
 
-const deleteImage = async (key) => {
+const deleteImage = async () => {
     try{
         const response = await axios.delete(`http://generative-image-a-i-express-40t73jy4w.vercel.app/image/delete/${route.params.key}`);
         console.log('Image deleted succesfullly:', response.data);
