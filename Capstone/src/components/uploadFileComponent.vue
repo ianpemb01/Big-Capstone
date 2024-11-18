@@ -17,7 +17,7 @@ const sendImage = async () => {
         formData.append('image', file.value);
 
         try {
-            const response = await axios.post('https://generative-image-a-i-express-40t73jy4w.vercel.app/upload', formData);
+            const response = await axios.post('https://generative-image-a-i-express-15zxlmc11.vercel.app/upload', formData);
             console.log(response.data);
         }catch(error) {
             console.error('Error uploading image: ', error)

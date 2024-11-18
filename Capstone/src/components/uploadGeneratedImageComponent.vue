@@ -13,7 +13,7 @@ const sendImage = async () => {
     console.log(props.url, 'burrito');
     try {
       const response = await axios.post(
-        "https://generative-image-a-i-express-40t73jy4w.vercel.app/save-image",
+        "https://generative-image-a-i-express-15zxlmc11.vercel.app/save-image",
         { URL: url,
           Key: imageKey.value
         }
