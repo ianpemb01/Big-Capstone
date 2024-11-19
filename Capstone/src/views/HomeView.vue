@@ -14,6 +14,7 @@ div{
 }
 
 .divbackg {
+    padding-top: 50px;
     background-image: url(../assets/Background-1.png);
     background-size: 100% 100%;
     height: 700px;
