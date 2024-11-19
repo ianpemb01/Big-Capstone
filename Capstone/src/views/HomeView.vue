@@ -15,9 +15,9 @@ div{
 
 .divbackg {
     background-image: url(../assets/Background-1.png);
+    background-size: 100% 100%;
     height: 500px;
     width: 100%;
-    background-size: contain;
     background-repeat: no-repeat;
 }
 
