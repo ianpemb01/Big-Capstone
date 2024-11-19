@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div className="h-full my-20 w-full pt-8" class="divbackg">
+  <div className="h-full my-20 w-full pt-8 mt-10" class="divbackg">
      <h1 className="text-white text-8xl pt-80 flex justify-center">Generate Vision using A.I.</h1>
   </div>
 </template>
