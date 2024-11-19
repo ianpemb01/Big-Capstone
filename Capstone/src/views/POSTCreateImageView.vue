@@ -9,7 +9,7 @@ let image_url = ref("");
 const generateImage = () => {
   console.log(prompt);
   let descr = prompt.value;
-  axios.post("http://generative-image-a-i-express-40t73jy4w.vercel.app/ask-openai", {
+  axios.post("https://generative-image-a-i-express-40t73jy4w.vercel.app/ask-openai", {
       prompt: descr,
     })
     .then((json) => {
