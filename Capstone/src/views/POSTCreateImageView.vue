@@ -11,7 +11,7 @@ const generateImage = () => {
   let descr = prompt.value;
   axios.post("https://generative-image-a-i-express-40t73jy4w.vercel.app/ask-openai", {
       prompt: descr,
-    })
+    },)
     .then((json) => {
       image_url.value = json.data.imageUrl;
       console.log(image_url.value);
@@ -37,9 +37,6 @@ let options = {
 fetch('https://generative-image-a-i-express.vercel.app/newImage', options)
 .then (response =>{
     return response.json()
-})
-.then(newPost=> {
-    console.log(newPost)
 })
  }else{
   console.log("URL field is empty.")
